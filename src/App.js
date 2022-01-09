@@ -1,9 +1,16 @@
 import React, { Component } from "react";
+import Counters from './components/counters';
+import Navbar from './components/navbar';
 
 class App extends Component{
     render() {
         return (
-             <div>body</div>
+            <React.Fragment>
+                <Navbar />
+                <main className="container">
+                    <Counters />
+                </main>
+            </React.Fragment>
         );
     }
 }
